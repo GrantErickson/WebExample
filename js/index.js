@@ -8,9 +8,10 @@ function main() {
     });
 }
 
-document.querySelector("p").addEventListener("click", () => {
-    alert("Paragraph");
-});
+// Note this works differently from the above depending on when the script gets loaded.
+// document.querySelector("p").addEventListener("click", () => {
+//     alert("Paragraph");
+// });
 
 
 var punchline;
