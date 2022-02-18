@@ -1,0 +1,48 @@
+<!-- Run through validator: https://validator.w3.org/nu/#textarea -->
+<!-- Follow this guide: https://google.github.io/styleguide/htmlcssguide.html -->
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+
+    <link rel="icon" href="ewu.png" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="pull-right menu-button" onclick="toggleMenu()">
+            <span>Menu</span>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="large-font">EWU</div>
+    </div>
+
+    <div class="menu hidden">
+        <button>Find Miracle Max</button>
+        <button>Storm the Castle</button>
+        <button>Do Chores</button>
+        <button>Become unmostly dead</button>
+    </div>
+
+    <h1 onclick="h1Click('My Stuff')">My First Heading</h1>
+    <p class="punchline">My first paragraph.</p>
+
+    <button onclick="h1Click()">Click Me</button>
+
+    <div id="weather">
+        <p>The Weather</p>
+        <a href="https://weather.com">
+            <img class="icon" src="ewu.png" alt="weather image"/>
+        </a>
+        <p class="description"></p>
+    </div>
+
+
+</body>
+</html>
