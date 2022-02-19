@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 function main() {
-    document.querySelector("p").addEventListener("click", () => {
-        alert("Paragraph");
-    });
+    // document.querySelector("p").addEventListener("click", () => {
+    //     alert("Paragraph");
+    // });
+    loadAJoke();
 }
 
 // Note this works differently from the above depending on when the script gets loaded.
@@ -14,26 +15,39 @@ function main() {
 // });
 
 
-var punchline;
 function h1Click(value = "default") {
-    alert(`Test: ${punchline}`);
+
+    alert('You clicked the heading');
 }
 
-axios.get('https://v2.jokeapi.dev/joke/Programming')
-    .then((response) => {
-        // handle success
-        //console.log(response.data.setup);
-        //console.log(response.data.delivery);
-        punchline = response.data.delivery;
-        document.querySelector("p.punchline").innerText = response.data.setup;
-    })
-    .catch((error) => {
-        // handle error
-        console.log(error);
-    });
+function loadAJoke() {
+    document.querySelector('p.punchline').classList.add('hidden');
+    document.querySelector("p.joke").innerText = "Searching all Jokes...";
+
+    axios.get('https://v2.jokeapi.dev/joke/Programming')
+        .then((response) => {
+            // handle success
+            //console.log(response.data.setup);
+            //console.log(response.data.delivery);
+            if (response.data.setup !== undefined) {
+                document.querySelector("p.joke").innerText = response.data.setup;
+                document.querySelector("p.punchline").innerText = response.data.delivery;
+
+                setTimeout(() => {
+                    document.querySelector('p.punchline').classList.remove('hidden');
+                }, 4000);
+            } else {
+                document.querySelector("p.joke").innerText = "Please try again in a few moments...";
+            }
+        })
+        .catch((error) => {
+            // handle error
+            console.log(error);
+        });
+}
 
 // Get the weather
-const lat = 47.65814877019067,  // Catalyst Building
+const lat = 47.65814877019067, // Catalyst Building
     lon = -117.40208908465422,
     apiKey = 'e44ff6715c0c7c9bf43ce3bfe74fdb6f';
 axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`)

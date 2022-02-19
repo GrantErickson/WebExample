@@ -1,9 +1,15 @@
 <!-- Run through validator: https://validator.w3.org/nu/#textarea -->
 <!-- Follow this guide: https://google.github.io/styleguide/htmlcssguide.html -->
+<!-- Use with VS Code and Live Server Extension -->
+<!-- Use with VS and live-server via NPM
+     npm install -g live-server
+     From the folder with the files run:
+     live-server -->
 
 
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <title>Page Title</title>
     <link rel="stylesheet" href="css/site.css" />
@@ -14,35 +20,51 @@
     <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script defer src="js/index.js"></script>
 </head>
+
 <body>
     <div class="menu-bar">
         <div class="pull-right menu-button" onclick="toggleMenu()">
             <span>Menu</span>
             <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="large-font">EWU</div>
+        <div class="large-font menu-title">EWU</div>
     </div>
 
-    <div class="menu hidden">
+    <div class="menu hidden fade-in">
         <button>Find Miracle Max</button>
         <button>Storm the Castle</button>
         <button>Do Chores</button>
         <button>Become unmostly dead</button>
     </div>
 
-    <h1 onclick="h1Click('My Stuff')">My First Heading</h1>
-    <p class="punchline">My first paragraph.</p>
+    <h1 onclick="h1Click('My Stuff')">This is an H1</h1>
 
-    <button onclick="h1Click()">Click Me</button>
+    <hr />
+
+    <div class="card">
+        <div class="card-header">
+            <h2>A Joke</h2>
+        </div>
+        <div class="card-body">
+            <p class="joke"></p>
+            <p class="punchline"></p>
+        </div>
+        <div class="card-footer">
+            <button onclick="loadAJoke()">Another Joke</button>
+        </div>
+    </div>
+
+    <hr />
 
     <div id="weather">
-        <p>The Weather</p>
+        <h2>The Weather</h2>
         <a href="https://weather.com">
-            <img class="icon" src="ewu.png" alt="weather image"/>
+            <img class="icon" src="ewu.png" alt="weather image" />
         </a>
         <p class="description"></p>
     </div>
 
 
 </body>
+
 </html>
