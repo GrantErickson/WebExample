@@ -46,6 +46,14 @@ body {
     padding: 0 10px 0 10px;
     overflow: hidden;
 }
+    .menu button {
+        display: block;
+        border-radius: 5px;
+        min-height: 30px;
+        min-width: 200px;
+        margin: 5px 0px 5px 0px;
+        padding: 5px 5px 5px 5px;
+    }
 
 .fade-in {
     animation: fadeIn 1s;
@@ -68,15 +76,7 @@ body {
     display: none;
 }
 
-.menu button {
-    display: block;
-    border-radius: 5px;
-    min-height: 30px;
-    min-width: 200px;
-    margin: 5px 0px 5px 0px;
-    padding: 5px 5px 5px 5px;
-    font-weight: bold;
-}
+
 
 #weather .icon {
     width: 100px;
@@ -109,4 +109,18 @@ body {
 .card-footer {
     padding: 10px;
     border-top: 2px solid darkgray;
+}
+
+a.button {
+    border: 2px ridge gray;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 400px;
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
+}
+
+button:hover, .button:hover{
+    border: 2px solid black;
 }

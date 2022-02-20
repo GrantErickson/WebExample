@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function (event) {
     main();
 });
@@ -15,10 +17,10 @@ function main() {
 // });
 
 
-function h1Click(value = "default") {
+//function h1Click(value = "default") {
 
-    alert('You clicked the heading');
-}
+//    alert('You clicked the heading');
+//}
 
 function loadAJoke() {
     document.querySelector('p.punchline').classList.add('hidden');
