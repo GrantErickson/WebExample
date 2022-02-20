@@ -19,28 +19,28 @@ Just like when working as a software developer, the web will be your primary sou
 ## Instructions
 - The project should look like the image below ❌✔
 - The project should have an index.html file ❌✔
-  - with an index.js file in a js folder ❌✔
-  - and a site.css file in a css folder (along with other css files) ❌✔
-- There should be a <head>
-  - with a favicon ❌✔
-  - and a title ❌✔
+  - With an index.js file in a js folder ❌✔
+  - And a site.css file in a css folder (along with other css files) ❌✔
+- There should be a `<head>`
+  - With a favicon ❌✔
+  - And a title ❌✔
 - The page should have a title/menu bar ❌✔
-  - use a font library like FontAwesome for the hamburger icon ❌✔
-  - when clicked, the menu should appear under it ❌✔
-  - the menu should have four buttons with creative names (the buttons don't need to do anything) ❌✔
-- The <body> should use the middle 70% of the page ❌✔
+  - Use Font Awesome for the hamburger icon (https://fontawesome.com/start) ❌✔ 
+  - When clicked, the menu should appear under it ❌✔
+  - The menu should have four buttons with creative names (the buttons don't need to do anything) ❌✔
+- The `<body>` should use the middle 70% of the page ❌✔
 - Include an h1 followed by a horizontal rule ❌✔
-- Create a card from <div>s ❌✔
+- Create a card from `<div>`s ❌✔
   - The card should have a header, body, and footer ❌✔
 - Use the joke API from the first assignment to display a joke on a card (https://v2.jokeapi.dev/joke/Programming) ❌✔
   - Use Axios from the CDN for the API call. (https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js)
   - If the joke API returns an error display a message to try again in a few moments ❌✔
   - The punch line should not show immediately, but appear after 4 seconds ❌✔
   - There should be a button to get another joke ❌✔
-  - There should be <a> tag that links to the joke api documentation page ❌✔
-    - This <a> should be manually styled as a button ❌✔
+  - There should be `<a>` tag that links to the joke api documentation page ❌✔
+    - This `<a>` should be manually styled as a button ❌✔
 - Buttons should have a background that is a gradient ❌✔
-- All buttons (even the <a> that you made into a button) should have a hover effect  ❌✔
+- All buttons (even the `<a>` that you made into a button) should have a hover effect  ❌✔
 
 ## Extra Credit
 Do the following:
@@ -49,6 +49,7 @@ Do the following:
 2. Rather than just making the menu appear, have it fade in and slide down. ❌✔
 3. Have the page jump to 100% width on a smaller screen and 50% on a larger screen with 70% on a regular screen.
 
+## The page should look like this
 ![Page to Replicate](WebExample.jpg)
 
 ## Fundamentals
