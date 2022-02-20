@@ -60,4 +60,5 @@ Do the following:
   - Keep all files in appropriate folders ❌✔
   - Have warning free HTML, CSS, and JavaScript ❌✔
   - Use as little css as possible ❌✔
+  - No inline CSS ❌✔
 - Choose simplicity over complexity ❌✔
